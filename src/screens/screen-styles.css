@@ -1,0 +1,10 @@
+.ArticleList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Social {
+    display: flex;
+    justify-content: right;
+}

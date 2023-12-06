@@ -1,23 +1,30 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
-import TopBar from '../components/TopBar';
+import TopBar from '../components/top-bar';
+import ArticleCard from '../components/article-card';
+import SocialList from '../components/social-list';
+import './screen-styles.css';
 
 function HomePage() {
     return (
-        <div>
-            <TopBar/>
-            <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src="holder.js/100px180" />
-                <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                    Some quick example text to build on the card title and make up the
-                    bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
-                </Card.Body>
-            </Card>
+        <div className='HomePage'>
+            <div>
+                <TopBar/>
+            </div>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <div className='ArticleList'>
+                <ArticleCard/>
+                <ArticleCard/>
+                <ArticleCard/>
+                <ArticleCard/>
+                <ArticleCard/>
+            </div>
+            <div className='Social'>
+                <SocialList/>
+            </div>
         </div>
     );
 }

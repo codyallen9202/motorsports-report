@@ -1,0 +1,12 @@
+.BaseCard {
+    flex-direction: row;
+    width: 50rem;
+    height: 20rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.SocialList {
+    width: 15rem;
+    height: 30rem;
+}
