@@ -7,8 +7,8 @@ function HeaderBar() {
           <Navbar.Brand href="/home">
             <img
               alt="Motorsports Retport"
-              src={'/images/flag-logo.png'}
-              height={100}
+              src={'/images/logo.png'}
+              height={70}
             />
           </Navbar.Brand>
           <Nav>

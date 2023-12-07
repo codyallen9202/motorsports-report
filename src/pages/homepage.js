@@ -1,4 +1,4 @@
-import ArticleCard from '../components/article-card';
+import ArticleCard from '../components/base-card';
 import './screen-styles.css';
 
 function HomePage() {
@@ -9,7 +9,6 @@ function HomePage() {
                     title={'Test 1'}
                     image={'images/logo.png'} 
                     author={'Richard Allen'}
-                    date={'2023-12-7'}
                     />
                 <ArticleCard title={'Test 2'} image={'images/logo.png'}/>
                 <ArticleCard title={'Test 3'} image={'images/logo.png'}/>
