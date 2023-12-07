@@ -36,3 +36,26 @@
 .nav-link {
     color: #ffffff !important;
 }
+
+/* Article Card */
+.article-card {
+    width: 65rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.article-text {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.article-card-title {
+    font-size: xx-large;
+    text-align: center;
+}
+
+.article-card-author {
+    font-size: small;
+    font-weight: 300;
+    text-align: center;
+}
