@@ -2,11 +2,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 140px;
+    margin-top: 15px;
     margin-bottom: 15px;
 }
 
-/* .Social {
-    display: flex;
-    justify-content: right;
-} */
+.content-container {
+    min-height: calc(100vh - 250px);
+}

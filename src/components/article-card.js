@@ -4,7 +4,7 @@ import './component-styles.css';
 
 function ArticleCard({ title, image, author, date  }) {
     return (
-        <Card className='BaseCard'>
+        <Card className='base-card'>
             <Card.Img src={image} />
             <Card.Body>
                 <Card.Title as={'h2'}>{title}</Card.Title>
@@ -13,7 +13,7 @@ function ArticleCard({ title, image, author, date  }) {
                     Some quick example text to build on the card title and make up the
                     bulk of the card's content.
                 </Card.Text>
-                <Button variant='danger'>Read More</Button>
+                <Button variant='danger' href='/articlepage'>Read More</Button>
             </Card.Body>
         </Card>
     );

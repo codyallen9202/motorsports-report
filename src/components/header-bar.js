@@ -1,10 +1,10 @@
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
-function TopBar() {
+function HeaderBar() {
   return (
       <Navbar className='top-bar' bg='dark' fixed='top'>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="/home">
             <img
               alt="Motorsports Retport"
               src={'/images/flag-logo.png'}
@@ -12,7 +12,7 @@ function TopBar() {
             />
           </Navbar.Brand>
           <Nav>
-            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="/home">Home</Nav.Link>
             <Nav.Link href="#DLM">Dirt Late Models</Nav.Link>
             <Nav.Link href="#DSC">Sprint Cars</Nav.Link>
             <Nav.Link href="#NASCAR">NASCAR</Nav.Link>
@@ -22,4 +22,4 @@ function TopBar() {
   );
 }
 
-export default TopBar;
+export default HeaderBar;

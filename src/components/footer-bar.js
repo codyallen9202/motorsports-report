@@ -2,7 +2,7 @@ import Navbar from 'react-bootstrap/Navbar';
 
 function FooterBar() {
     return (
-        <Navbar className='footer-bar' bg='dark' data-bs-theme='dark'>
+        <Navbar className='footer-bar' bg='dark'>
             <div className='social-container'>
                 <Navbar.Brand href='https://instagram.com' target='_blank'>
                     <img
@@ -34,7 +34,7 @@ function FooterBar() {
                 </Navbar.Brand>
             </div>
             <div className='site-info'>
-                <p>Website Created and Maintained by Cody Allen</p>
+                <p>© 2023 MotorsportsReport.net || Created and Maintained by Cody Allen</p>
             </div>
         </Navbar>
     );

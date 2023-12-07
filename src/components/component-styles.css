@@ -1,23 +1,10 @@
-.BaseCard {
+.base-card {
     flex-direction: row;
-    width: 50rem;
-    height: 20rem;
+    width:65rem;
+    height: 35rem;
     margin-top: 10px;
     margin-bottom: 10px;
 }
-
-/* .card-ftr {
-    display: flex;
-    align-items: flex-end;
-    height: 10rem;
-    font-size: small;
-    font-weight: 300;
-} */
-
-/* .SocialList {
-    width: 15rem;
-    height: 30rem;
-} */
 
 .author-tag {
     font-size: small;
@@ -27,6 +14,8 @@
 
 .top-bar {
     justify-content: center;
+    position: sticky;
+    top: 0;
 }
 
 .footer-bar {
