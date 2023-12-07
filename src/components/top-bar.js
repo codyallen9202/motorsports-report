@@ -1,14 +1,13 @@
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import Logo from '../images/Logo.png';
 
 function TopBar() {
   return (
-      <Navbar className='justify-content-center' bg="dark" data-bs-theme="dark" fixed='top'>
+      <Navbar className='top-bar' bg='dark' fixed='top'>
           <Navbar.Brand href="#home">
             <img
               alt="Motorsports Retport"
-              src={Logo}
+              src={'/images/flag-logo.png'}
               height={100}
             />
           </Navbar.Brand>

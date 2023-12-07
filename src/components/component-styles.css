@@ -6,7 +6,44 @@
     margin-bottom: 10px;
 }
 
-.SocialList {
+/* .card-ftr {
+    display: flex;
+    align-items: flex-end;
+    height: 10rem;
+    font-size: small;
+    font-weight: 300;
+} */
+
+/* .SocialList {
     width: 15rem;
     height: 30rem;
+} */
+
+.author-tag {
+    font-size: small;
+    font-weight: 300;
+    
+}
+
+.top-bar {
+    justify-content: center;
+}
+
+.footer-bar {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.site-info {
+    color: #fff;
+    font-size: small;
+}
+
+.social-container {
+    margin-bottom: 25px;
+    margin-top: 15px;
+}
+
+.nav-link {
+    color: #ffffff !important;
 }

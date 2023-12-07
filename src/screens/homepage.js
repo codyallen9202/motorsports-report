@@ -1,6 +1,6 @@
 import TopBar from '../components/top-bar';
 import ArticleCard from '../components/article-card';
-import SocialList from '../components/social-list';
+import FooterBar from '../components/footer-bar';
 import './screen-styles.css';
 
 function HomePage() {
@@ -9,21 +9,20 @@ function HomePage() {
             <div>
                 <TopBar/>
             </div>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <div className='ArticleList'>
-                <ArticleCard/>
-                <ArticleCard/>
-                <ArticleCard/>
-                <ArticleCard/>
-                <ArticleCard/>
+            <div className='article-container'>
+                <ArticleCard 
+                    title={'Test 1'}
+                    image={'images/logo.png'} 
+                    author={'Richard Allen'}
+                    date={'2023-12-7'}
+                    />
+                <ArticleCard title={'Test 2'} image={'images/logo.png'}/>
+                <ArticleCard title={'Test 3'} image={'images/logo.png'}/>
+                <ArticleCard title={'Test 4'} image={'images/logo.png'}/>
+                <ArticleCard title={'Test 5'} image={'images/logo.png'}/>
             </div>
-            <div className='Social'>
-                <SocialList/>
+            <div className='page-footer'>
+                <FooterBar/>
             </div>
         </div>
     );
