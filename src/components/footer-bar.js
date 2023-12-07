@@ -18,7 +18,7 @@ function FooterBar() {
                         height={30}
                     />
                 </Navbar.Brand>
-                <Navbar.Brand href='https://youtube.com' target='_blank'>
+                <Navbar.Brand href='https://www.youtube.com/channel/UCAsojScNEyJPF3e7uxW6boQ' target='_blank'>
                     <img
                         src='/images/youtube-logo.png'
                         alt='YouTube'
