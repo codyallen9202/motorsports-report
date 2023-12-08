@@ -18,12 +18,19 @@
 }
 /* --------------------------------------- */
 
+/* header-bar.js */
 .top-bar {
     justify-content: center;
     position: sticky;
     top: 0;
 }
 
+.nav-link {
+    color: #ffffff !important;
+}
+/* ------------------------------------------ */
+
+/* footer-bar.js */
 .footer-bar {
     justify-content: center;
     flex-direction: column;
@@ -39,16 +46,16 @@
     margin-top: 15px;
 }
 
-.nav-link {
-    color: #ffffff !important;
-}
 /* --------------------------------------------- */
 
-/* Article Card */
+/* article-card.js */
 .article-card {
     width: 65rem;
     margin-top: 10px;
     margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .article-text {
@@ -59,6 +66,8 @@
 .article-card-title {
     font-size: xx-large;
     text-align: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 .article-card-author {
@@ -66,12 +75,18 @@
     font-weight: 300;
     text-align: center;
 }
+
+.article-card-img {
+    width: fit-content;
+    height: fit-content;
+    margin: 12px;
+}
 /* ---------------------------------------- */
 
-/* Vertical Ad */
+/* vertical-ad.js*/
 .vertical-ad-card {
     width: 25rem;
-    height: 100rem;
+    height: 50rem;
     margin-top: 10px;
     margin-bottom: 10px;
 }

@@ -28,6 +28,12 @@
 
 
 /* Everything for articlepage.js */
+.article-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .article-title {
     display: flex;
     justify-content: center;

@@ -1,13 +1,13 @@
 import Card from 'react-bootstrap/Card';
 import './component-styles.css';
 
-function ArticleCard({ title, image, author, date }) {
+function ArticleCard({ title, image, author, date, tag }) {
     return (
         <Card className='article-card shadow'>
-            <Card.Img src={image}/>
+            <Card.Img className='article-card-img' src={image}/>
             <Card.Body>
                 <Card.Title className='article-card-title'>{title}</Card.Title>
-                <Card.Text className='article-card-author'>{author}</Card.Text>
+                <Card.Text className='article-card-author'>{author} | {date} | {tag}</Card.Text>
                 <Card.Text className='article-text'>
                     <p>When the Brad Sweet and Kyle Larson-owned High Limit Sprint Car Series purchased the All Star Circuit of Champions for the purpose of expanding its schedule beyond the midweek tour it had been in 2023, it became apparent that there would be a competition for tracks, dates and drivers with the more established World of Outlaws NOS Energy Drink Sprint Car Series. And that new found rivalry has come to the forefront in this form of motorsports all throughout the current off-season.</p>
                     <p>Several drivers have already declared which series they will race with during the 2024 campaign. David Gravel, Giovanni Scelzi and Logan Schuchart are among the stars who will stick with the World of Outlaws. It was already known, of course, that five-time WoO champion Sweet would compete with his own circuit along with his team owner Kasey Kahne. And naturally, Larson will be on hand when his NASCAR schedule will allow.</p>
