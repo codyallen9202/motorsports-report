@@ -1,3 +1,10 @@
+/* for hompage.js */
+.home-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .article-container {
     display: flex;
     flex-direction: column;
@@ -5,6 +12,15 @@
     margin-top: 15px;
     margin-bottom: 15px;
 }
+
+.ad-container {
+    display: flex;
+    position: absolute;
+    right: 22vw;
+    margin-top: 15px;
+}
+
+/* ---------------------------------------------------------- */
 
 .content-container {
     min-height: calc(100vh - 250px);
