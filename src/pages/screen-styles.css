@@ -23,14 +23,14 @@
 /* ---------------------------------------------------------- */
 
 .content-container {
-    min-height: calc(100vh - 220px);
+    min-height: calc(100vh - 90px);
 }
 
-.wrapper {
+/* .wrapper {
     background-image: url(/public/images/austin-loveing--QmNbzMrj1M-unsplash.jpg);
     background-size: 100vw;
     background-position: center center;
-}
+} */
 
 
 /* Everything for articlepage.js */

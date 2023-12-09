@@ -7,7 +7,7 @@ function ArticlePage() {
             <div className='article-container'>
                 <ArticleCard
                     title={'Adding Abreu takes big Sprint Car name off the board in favor of High Limit'}
-                    image={'images/rico-24.JPG'}
+                    image={'images/logo.png'}
                     author={'Richard Allen'}
                     date={'December 6, 2023'}
                     tag={'Dirt Sprint Cars'}

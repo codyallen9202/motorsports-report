@@ -3,7 +3,7 @@ import './component-styles.css';
 
 function ArticleCard({ title, image, author, date, tag }) {
     return (
-        <Card className='article-card shadow'>
+        <Card className='article-card'>
             <Card.Img className='article-card-img' src={image}/>
             <Card.Body>
                 <Card.Title className='article-card-title'>{title}</Card.Title>

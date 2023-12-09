@@ -5,6 +5,8 @@
     height: fit-content;
     margin-top: 10px;
     margin-bottom: 10px;
+    border-radius: 0;
+    border: 0;
 }
 
 .base-card-img {
@@ -63,6 +65,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 0;
 }
 
 .article-text {

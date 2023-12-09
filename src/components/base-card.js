@@ -5,8 +5,8 @@ import './component-styles.css';
 
 function BaseCard({ title, image, author, slug }) {
     return (
-        <Card className='base-card shadow'>
-            <Card.Img className='base-card-img' src={image}/>
+        <Card className='base-card'>
+            {image && <Card.Img className='base-card-img' src={image}/>}
             <Card.Body>
                 <Card.Title as={'h2'}>{title}</Card.Title>
                 <Card.Text className='base-card-author'>{author}</Card.Text>
