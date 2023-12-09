@@ -4,6 +4,10 @@ import HeaderBar from './components/header-bar';
 import FooterBar from './components/footer-bar';
 import HomePage from './pages/homepage';
 import ArticlePage from './pages/articlepage';
+import DLMPage from './pages/dlm-page';
+import DSCPage from './pages/dsc-page';
+import NASCARPage from './pages/nascar-page';
+import PLMPage from './pages/plm-page';
 import './pages/screen-styles.css';
 
 function App() {
@@ -16,6 +20,10 @@ function App() {
             <Route path='/' element={<HomePage/>}/>
             <Route path='/home/' element={<HomePage/>}/>
             <Route path='/article/:slug' element={<ArticlePage/>}/>
+            <Route path='/DLM/' element={<DLMPage/>}/>
+            <Route path='/DSC/' element={<DSCPage/>}/>
+            <Route path='/NASCAR/' element={<NASCARPage/>}/>
+            <Route path='/PLM/' element={<PLMPage/>}/>
           </Routes>
         </div>
         <FooterBar/>

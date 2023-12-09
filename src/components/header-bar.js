@@ -13,10 +13,10 @@ function HeaderBar() {
           </Navbar.Brand>
           <Nav>
             <Nav.Link href="/home">Home</Nav.Link>
-            <Nav.Link href="#DLM">Dirt Late Models</Nav.Link>
-            <Nav.Link href="#DSC">Sprint Cars</Nav.Link>
-            <Nav.Link href="#NASCAR">NASCAR</Nav.Link>
-            <Nav.Link href="#PLM">Pavement Late Models</Nav.Link>
+            <Nav.Link href="/DLM">Dirt Late Models</Nav.Link>
+            <Nav.Link href="/DSC">Sprint Cars</Nav.Link>
+            <Nav.Link href="/NASCAR">NASCAR</Nav.Link>
+            <Nav.Link href="/PLM">Pavement Late Models</Nav.Link>
           </Nav>
       </Navbar>
   );

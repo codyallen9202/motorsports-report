@@ -6,20 +6,3 @@ export const client = createClient({
     useCdn: true,
     apiVersion: '2023-12-08'
 })
-
-export async function getPosts() {
-    const posts = await client.fetch(`*[_type == "post"]{
-        title,
-        slug,
-        mainImage{
-            asset->{
-                _id,
-                url
-            }
-        },
-        author->{
-            name
-        }
-    }`)
-    return posts
-}

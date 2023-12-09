@@ -1,7 +1,7 @@
 /* base-card.js */
 .base-card {
     flex-direction: row;
-    width:65rem;
+    width:50rem;
     height: fit-content;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -59,7 +59,7 @@
 
 /* article-card.js */
 .article-card {
-    width: 65rem;
+    width: 50rem;
     margin-top: 10px;
     margin-bottom: 10px;
     display: flex;
@@ -69,15 +69,15 @@
 }
 
 .article-text {
-    margin-left: 2rem;
-    margin-right: 2rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
 }
 
 .article-card-title {
     font-size: xx-large;
     text-align: center;
-    margin-left: 2rem;
-    margin-right: 2rem;
 }
 
 .article-card-author {

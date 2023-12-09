@@ -4,13 +4,13 @@ import './screen-styles.css';
 import React, { useEffect, useState } from 'react';
 import { client } from '../client';
 
-const HomePage = () => {
+const PLMPage = () => {
     const [posts, setPosts] = useState([]);
 
     useEffect(() => {
         client
             .fetch(
-                `*[_type == "post"]{
+                `*[_type == "post" && categories[0]->title == "Pavement Late Models"]{
                     title,
                     slug,
                     mainImage{
@@ -48,4 +48,4 @@ const HomePage = () => {
     );
 };
 
-export default HomePage;
+export default PLMPage;
