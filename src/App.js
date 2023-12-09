@@ -14,8 +14,8 @@ function App() {
         <div className='content-container'>
           <Routes>
             <Route path='/' element={<HomePage/>}/>
-            <Route path='/home' element={<HomePage/>}/>
-            <Route path='/articlepage' element={<ArticlePage/>}/>
+            <Route path='/home/' element={<HomePage/>}/>
+            <Route path='/article/:slug' element={<ArticlePage/>}/>
           </Routes>
         </div>
         <FooterBar/>

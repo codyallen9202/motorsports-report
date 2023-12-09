@@ -23,7 +23,13 @@
 /* ---------------------------------------------------------- */
 
 .content-container {
-    min-height: calc(100vh - 250px);
+    min-height: calc(100vh - 220px);
+}
+
+.wrapper {
+    background-image: url(/public/images/austin-loveing--QmNbzMrj1M-unsplash.jpg);
+    background-size: 100vw;
+    background-position: center center;
 }
 
 

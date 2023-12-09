@@ -2,13 +2,14 @@
 .base-card {
     flex-direction: row;
     width:65rem;
-    height: 35rem;
+    height: fit-content;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 .base-card-img {
     margin: 12px;
+    height: fit-content;
 }
 
 .base-card-author {
@@ -16,6 +17,12 @@
     font-weight: 300;
     
 }
+
+/* .img-wrap {
+    display: flex;
+    align-items: center;
+    width: 100%;
+} */
 /* --------------------------------------- */
 
 /* header-bar.js */
