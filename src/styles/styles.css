@@ -5,9 +5,7 @@
     margin-top: 15px;
     margin-bottom: 15px;
 }
-/* ---------------------------------------------------------- */
 
-/* base-card.js */
 .base-card {
     flex-direction: row;
     max-width: 50rem;

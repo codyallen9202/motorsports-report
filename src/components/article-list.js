@@ -1,4 +1,5 @@
-import BaseCard from './base-card';
+import Card from 'react-bootstrap/Card';
+import { Link } from 'react-router-dom';
 import '../styles/styles.css';
 import React, { useEffect, useState } from 'react';
 import { client } from '../client';
@@ -32,12 +33,15 @@ const ArticleList = ({ filter }) => {
     return (
         <div className='article-list'>
             {posts && posts.map(post => (
-                <BaseCard 
-                    key={post._id}
-                    title={post.title}
-                    image={post.mainImage ? post.mainImage.asset.url : null}
-                    author={post.author.name}
-                    slug={post.slug.current}/>
+                <Link className='text-decoration-none' to={'/article/' + post.slug.current} key={post.slug.current}>
+                    <Card className='base-card'>
+                        {post.mainImage.asset.url && <Card.Img className='base-card-img' src={post.mainImage.asset.url}/>}
+                        <Card.Body>
+                            <Card.Title as={'h2'}>{post.title}</Card.Title>
+                            <Card.Text className='base-card-author'>{post.author.name}</Card.Text>
+                        </Card.Body>
+                    </Card>
+                </Link>
             ))}
         </div>
     );
