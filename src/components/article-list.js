@@ -1,5 +1,5 @@
 import BaseCard from './base-card';
-import '../styles/screen-styles.css';
+import '../styles/styles.css';
 import React, { useEffect, useState } from 'react';
 import { client } from '../client';
 

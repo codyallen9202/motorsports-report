@@ -4,7 +4,7 @@ import HeaderBar from './components/header-bar';
 import FooterBar from './components/footer-bar';
 import ArticleList from './components/article-list';
 import VerticalAd from './components/vertical-ad';
-import './styles/screen-styles.css';
+import './styles/styles.css';
 import SingleArticle from './components/single-article';
 
 function App() {

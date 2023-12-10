@@ -1,6 +1,6 @@
 import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom';
-import '../styles/component-styles.css';
+import '../styles/styles.css';
 
 function BaseCard({ title, image, author, slug, body }) {
     return (

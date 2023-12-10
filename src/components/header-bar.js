@@ -1,6 +1,6 @@
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import '../styles/component-styles.css'
+import '../styles/styles.css'
 
 function HeaderBar() {
   return (

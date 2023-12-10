@@ -1,5 +1,5 @@
 import Card from 'react-bootstrap/Card';
-import '../styles/component-styles.css';
+import '../styles/styles.css';
 
 function VerticalAd() {
     return(
