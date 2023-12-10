@@ -1,5 +1,5 @@
 import BaseCard from '../components/base-card';
-import VerticalAd from '../components/vertical-ad';
+// import VerticalAd from '../components/vertical-ad';
 import '../styles/screen-styles.css';
 import React, { useEffect, useState } from 'react';
 import { client } from '../client';
