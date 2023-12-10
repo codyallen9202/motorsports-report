@@ -1,5 +1,4 @@
-import ArticleCard from "../components/article-card";
-// import VerticalAd from "../components/vertical-ad";
+import SingleArticleCard from "./single-article-card";
 import React, { useEffect, useState } from 'react';
 import { useParams } from "react-router-dom";
 import { client } from "../client";
@@ -15,7 +14,7 @@ export function dateFormat(dateString) {
     return formattedDate;
 }
 
-const ArticlePage = () => {
+const SingleArticle = () => {
     const [singlePost, setSinglePost] = useState(null);
     const { slug } = useParams();
 
@@ -49,22 +48,17 @@ const ArticlePage = () => {
     if (!singlePost) return <div>Loading...</div>;
 
     return (
-        <div className='article-page'>
-            <div className='article-container'>
-                <ArticleCard
-                    title={singlePost.title ? singlePost.title : 'Error: Title Not Found'}
-                    image={singlePost.mainImage ? singlePost.mainImage.asset.url : null}
-                    author={singlePost.author ? singlePost.author.name : 'No Author Found'}
-                    date={singlePost.publishedAt ? dateFormat(singlePost.publishedAt) : 'Null'}
-                    tag={singlePost.categories ? singlePost.categories.title : 'Other'}
-                    body={singlePost.body ? singlePost.body : null}
-                />
-            </div>
-            {/* <div className='ad-container'>
-                <VerticalAd/>
-            </div> */}
+        <div className='article-container'>
+            <SingleArticleCard
+                title={singlePost.title ? singlePost.title : 'Error: Title Not Found'}
+                image={singlePost.mainImage ? singlePost.mainImage.asset.url : null}
+                author={singlePost.author ? singlePost.author.name : 'No Author Found'}
+                date={singlePost.publishedAt ? dateFormat(singlePost.publishedAt) : 'Null'}
+                tag={singlePost.categories ? singlePost.categories.title : 'Other'}
+                body={singlePost.body ? singlePost.body : null}
+            />
         </div>
     );
 }
 
-export default ArticlePage;
+export default SingleArticle;

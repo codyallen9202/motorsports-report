@@ -1,10 +1,9 @@
-import BaseCard from '../components/base-card';
-// import VerticalAd from '../components/vertical-ad';
+import BaseCard from './base-card';
 import '../styles/screen-styles.css';
 import React, { useEffect, useState } from 'react';
 import { client } from '../client';
 
-const HomePage = ({ filter }) => {
+const ArticleList = ({ filter }) => {
     const [posts, setPosts] = useState([]);
 
     useEffect(() => {
@@ -31,24 +30,17 @@ const HomePage = ({ filter }) => {
     }, [filter]);
 
     return (
-        <div className='home-page'>
-            <div className='article-container'>
-                {posts && posts.map(post => (
-                    <BaseCard 
-                        key={post._id}
-                        title={post.title}
-                        image={post.mainImage ? post.mainImage.asset.url : null}
-                        author={post.author.name}
-                        slug={post.slug.current}
-                        // body={post.body.children.text}
-                    />
-                ))}
-            </div>
-            {/* <div className='ad-container'>
-                <VerticalAd/>
-            </div> */}
+        <div className='article-list'>
+            {posts && posts.map(post => (
+                <BaseCard 
+                    key={post._id}
+                    title={post.title}
+                    image={post.mainImage ? post.mainImage.asset.url : null}
+                    author={post.author.name}
+                    slug={post.slug.current}/>
+            ))}
         </div>
     );
 };
 
-export default HomePage;
+export default ArticleList;

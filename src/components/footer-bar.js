@@ -4,7 +4,6 @@ import '../styles/component-styles.css'
 function FooterBar() {
     return (
         <Navbar className='footer-bar' bg='dark'>
-            <div className='bar-wrapper'>
                 <div className='social-container'>
                     <Navbar.Brand href='https://www.facebook.com/people/Motorsports-Report/61553590751076/' target='_blank'>
                         <img
@@ -38,7 +37,6 @@ function FooterBar() {
                 <div className='site-info'>
                     <p>© 2023 MotorsportsReport.net || Created and Maintained by Cody Allen</p>
                 </div>
-            </div>
         </Navbar>
     );
 }

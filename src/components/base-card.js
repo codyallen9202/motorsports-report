@@ -11,7 +11,6 @@ function BaseCard({ title, image, author, slug, body }) {
                     <Card.Title as={'h2'}>{title}</Card.Title>
                     <Card.Text className='base-card-author'>{author}</Card.Text>
                     <Card.Text>{body}</Card.Text>
-                    {/* <Link to={'/article/' + slug} key={slug}><Button variant='danger'>Read More</Button></Link> */}
                 </Card.Body>
             </Card>
         </Link>

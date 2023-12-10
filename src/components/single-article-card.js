@@ -2,7 +2,7 @@ import Card from 'react-bootstrap/Card';
 import SanityBlockContent from '@sanity/block-content-to-react';
 import '../styles/component-styles.css';
 
-function ArticleCard({ title, image, author, date, tag, body }) {
+function SingleArticleCard({ title, image, author, date, tag, body }) {
     return (
         <Card className='article-card'>
             <Card.Img className='article-card-img' src={image}/>
@@ -22,4 +22,4 @@ function ArticleCard({ title, image, author, date, tag, body }) {
     );
 }
 
-export default ArticleCard;
+export default SingleArticleCard;
