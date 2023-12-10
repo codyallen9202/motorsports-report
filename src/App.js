@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import HeaderBar from './components/header-bar';
 import FooterBar from './components/footer-bar';
 import ArticleList from './components/article-list';
-import VerticalAd from './components/vertical-ad';
+import VerticalSponsor from './components/vertical-ad';
 import './styles/styles.css';
 import SingleArticle from './components/single-article';
 
@@ -22,8 +22,8 @@ function App() {
             <Route path='/NASCAR/' element={<ArticleList filter={'NASCAR'}/>}/>
             <Route path='/other/' element={<ArticleList filter={'Other'}/>}/>
           </Routes>
-          <div  className='ad-container'>
-            <VerticalAd/>
+          <div className='sp-container'>
+            <VerticalSponsor/>
           </div>
         </div>
         <FooterBar/>

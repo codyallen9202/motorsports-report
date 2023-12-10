@@ -102,22 +102,21 @@
 /* ---------------------------------------- */
 
 /* vertical-ad.js*/
-.vertical-ad-card {
+.vertical-sp-card {
     width: fit-content;
     height: fit-content;
     margin: 10px;
     max-width: 10vw;
 }
 
-.vertical-ad-title {
+.vertical-sp-title {
     text-align: center;
 }
 
-.single-ad {
+.single-sp {
     display: flex;
     flex-direction: column;
     align-items: center;
-    outline: 1px;
     margin: 5px;
 }
 
@@ -132,7 +131,7 @@
     max-width: 100vw;
 }
 
-.ad-container {
+.sp-container {
     margin-top: 15px;
 }
 /* ---------------------------------------------------------------- */
