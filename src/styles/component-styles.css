@@ -1,10 +1,9 @@
 /* base-card.js */
 .base-card {
     flex-direction: row;
-    width:50rem;
+    max-width:50rem;
     height: fit-content;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px;
     /* border-radius: 0; */
     /* border: 0; */
 }
@@ -37,6 +36,14 @@
 
 .nav-link {
     color: #ffffff !important;
+    text-align: center;
+}
+
+.bar-wrapper {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 /* ------------------------------------------ */
 
@@ -60,7 +67,7 @@
 
 /* article-card.js */
 .article-card {
-    width: 50rem;
+    max-width: 50rem;
     margin-top: 10px;
     margin-bottom: 10px;
     display: flex;
