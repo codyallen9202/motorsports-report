@@ -64,8 +64,8 @@
 }
 /* ------------------------------------------ */
 
-/* single-article-card.js */
-.article-card {
+/* single-article.js */
+.single-article {
     max-width: 50rem;
     margin-top: 10px;
     margin-bottom: 10px;
