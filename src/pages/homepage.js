@@ -21,6 +21,11 @@ const HomePage = () => {
                     },
                     author->{
                         name
+                    },
+                    body[0]{
+                        children[0]{
+                            text
+                        }
                     }
                 }`
             )
@@ -38,6 +43,7 @@ const HomePage = () => {
                         image={post.mainImage ? post.mainImage.asset.url : null}
                         author={post.author.name}
                         slug={post.slug.current}
+                        // body={post.body.children.text}
                     />
                 ))}
             </div>
