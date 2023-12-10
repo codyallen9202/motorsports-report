@@ -4,10 +4,6 @@ import HeaderBar from './components/header-bar';
 import FooterBar from './components/footer-bar';
 import HomePage from './pages/homepage';
 import ArticlePage from './pages/articlepage';
-import DLMPage from './pages/dlm-page';
-import DSCPage from './pages/dsc-page';
-import NASCARPage from './pages/nascar-page';
-import OtherPage from './pages/other-page';
 import './styles/screen-styles.css';
 
 function App() {
@@ -17,13 +13,13 @@ function App() {
         <HeaderBar/>
         <div className='content-container'>
           <Routes>
-            <Route path='/' element={<HomePage/>}/>
-            <Route path='/home/' element={<HomePage/>}/>
+            <Route path='/' element={<HomePage filter={null}/>}/>
+            <Route path='/home/' element={<HomePage filter={null}/>}/>
             <Route path='/article/:slug' element={<ArticlePage/>}/>
-            <Route path='/DLM/' element={<DLMPage/>}/>
-            <Route path='/DSC/' element={<DSCPage/>}/>
-            <Route path='/NASCAR/' element={<NASCARPage/>}/>
-            <Route path='/other/' element={<OtherPage/>}/>
+            <Route path='/DLM/' element={<HomePage filter={'Dirt Late Models'}/>}/>
+            <Route path='/DSC/' element={<HomePage filter={'Dirt Sprint Cars'}/>}/>
+            <Route path='/NASCAR/' element={<HomePage filter={'NASCAR'}/>}/>
+            <Route path='/other/' element={<HomePage filter={'Other'}/>}/>
           </Routes>
         </div>
         <FooterBar/>

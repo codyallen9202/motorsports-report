@@ -4,13 +4,14 @@ import '../styles/screen-styles.css';
 import React, { useEffect, useState } from 'react';
 import { client } from '../client';
 
-const HomePage = () => {
+const HomePage = ({ filter }) => {
     const [posts, setPosts] = useState([]);
 
     useEffect(() => {
+        console.log("Filter:", filter);
         client
             .fetch(
-                `*[_type == "post"]{
+                `*[_type == "post" && (!defined($filter) || categories[0]->title == $filter)]{
                     title,
                     slug,
                     mainImage{
@@ -22,16 +23,12 @@ const HomePage = () => {
                     author->{
                         name
                     },
-                    body[0]{
-                        children[0]{
-                            text
-                        }
-                    }
-                }`
+                }`,
+                { filter }
             )
             .then((data) => setPosts(data))
             .catch(console.error);
-    }, []);
+    }, [filter]);
 
     return (
         <div className='home-page'>

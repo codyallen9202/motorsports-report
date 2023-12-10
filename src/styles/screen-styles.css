@@ -26,11 +26,9 @@
     min-height: calc(100vh - 90px);
 }
 
-/* .wrapper {
-    background-image: url(/public/images/austin-loveing--QmNbzMrj1M-unsplash.jpg);
-    background-size: 100vw;
-    background-position: center center;
-} */
+.wrapper {
+    max-width: 100vw;
+}
 
 
 /* Everything for articlepage.js */
