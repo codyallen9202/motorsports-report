@@ -23,6 +23,15 @@
     font-size: medium;
     font-weight: 300;
 }
+
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.page-button {
+    margin: 10px;
+}
 /* --------------------------------------- */
 
 /* footer-bar.js */
@@ -67,6 +76,7 @@
 /* single-article.js */
 .single-article {
     max-width: 50rem;
+    height: fit-content;
     margin-top: 10px;
     margin-bottom: 10px;
     display: flex;

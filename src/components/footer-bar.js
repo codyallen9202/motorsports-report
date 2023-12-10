@@ -1,7 +1,7 @@
 import Navbar from 'react-bootstrap/Navbar';
 import '../styles/styles.css'
 
-function FooterBar() {
+export default function FooterBar() {
     return (
         <Navbar className='footer-bar' bg='dark'>
                 <div className='social-container'>
@@ -40,5 +40,3 @@ function FooterBar() {
         </Navbar>
     );
 }
-
-export default FooterBar;

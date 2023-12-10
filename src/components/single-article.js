@@ -15,7 +15,7 @@ export function dateFormat(dateString) {
     return formattedDate;
 }
 
-const SingleArticle = () => {
+export default function SingleArticle() {
     const [singlePost, setSinglePost] = useState(null);
     const { slug } = useParams();
 
@@ -73,5 +73,3 @@ const SingleArticle = () => {
         </Card>
     );
 }
-
-export default SingleArticle;

@@ -2,7 +2,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import '../styles/styles.css'
 
-function HeaderBar() {
+export default function HeaderBar() {
   return (
       <Navbar className='header-bar' bg='dark' fixed='top'>
           <div className='bar-wrapper'>
@@ -24,5 +24,3 @@ function HeaderBar() {
       </Navbar>
   );
 }
-
-export default HeaderBar;

@@ -1,7 +1,7 @@
 import Card from 'react-bootstrap/Card';
 import '../styles/styles.css';
 
-function VerticalSponsor() {
+export default function VerticalSponsor() {
     return(
         <Card className='vertical-sp-card'>
             <Card.Body>
@@ -21,5 +21,3 @@ function VerticalSponsor() {
         </Card>
     );
 }
-
-export default VerticalSponsor;
