@@ -14,7 +14,7 @@ function ArticleCard({ title, image, author, date, tag, body }) {
                         blocks={body}
                         projectId='xkb4ar5f'
                         dataset='production'
-                        className='article-text'
+                        className='article-body'
                         />
                 </Card.Text>
             </Card.Body>

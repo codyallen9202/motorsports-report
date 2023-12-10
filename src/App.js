@@ -7,7 +7,7 @@ import ArticlePage from './pages/articlepage';
 import DLMPage from './pages/dlm-page';
 import DSCPage from './pages/dsc-page';
 import NASCARPage from './pages/nascar-page';
-import PLMPage from './pages/plm-page';
+import OtherPage from './pages/other-page';
 import './styles/screen-styles.css';
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
             <Route path='/DLM/' element={<DLMPage/>}/>
             <Route path='/DSC/' element={<DSCPage/>}/>
             <Route path='/NASCAR/' element={<NASCARPage/>}/>
-            <Route path='/PLM/' element={<PLMPage/>}/>
+            <Route path='/other/' element={<OtherPage/>}/>
           </Routes>
         </div>
         <FooterBar/>

@@ -17,7 +17,7 @@ function HeaderBar() {
             <Nav.Link href="/DLM">Dirt Late Models</Nav.Link>
             <Nav.Link href="/DSC">Sprint Cars</Nav.Link>
             <Nav.Link href="/NASCAR">NASCAR</Nav.Link>
-            <Nav.Link href="/PLM">Pavement Late Models</Nav.Link>
+            <Nav.Link href="/other">Other</Nav.Link>
           </Nav>
       </Navbar>
   );

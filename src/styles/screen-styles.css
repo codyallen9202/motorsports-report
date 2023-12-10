@@ -39,34 +39,3 @@
     flex-direction: row;
     justify-content: center;
 }
-
-.article-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 3rem;
-    max-width: 65rem;
-    text-align: center;
-}
-
-.article-image {
-    display: flex;
-    justify-content: center;
-    height: 480px;
-}
-
-.article-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 3rem;
-    max-width: 65rem
-}
-
-.article-meta-data {
-    display: flex;
-    align-items: center;
-    font-size: small;
-    font-weight: 300;
-    flex-direction: column;
-}

@@ -12,6 +12,7 @@
 .base-card-img {
     margin: 12px;
     height: fit-content;
+    max-width: 30rem;
 }
 
 .base-card-author {
@@ -68,7 +69,7 @@
     border: 0;
 }
 
-.article-text {
+.article-body {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -90,6 +91,7 @@
     width: fit-content;
     height: fit-content;
     margin: 12px;
+    max-width: 50rem;
 }
 /* ---------------------------------------- */
 
