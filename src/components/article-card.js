@@ -1,6 +1,6 @@
 import Card from 'react-bootstrap/Card';
 import SanityBlockContent from '@sanity/block-content-to-react';
-import './component-styles.css';
+import '../styles/component-styles.css';
 
 function ArticleCard({ title, image, author, date, tag, body }) {
     return (

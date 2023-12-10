@@ -1,9 +1,10 @@
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import '../styles/component-styles.css'
 
 function HeaderBar() {
   return (
-      <Navbar className='top-bar' bg='dark' fixed='top'>
+      <Navbar className='header-bar' bg='dark' fixed='top'>
           <Navbar.Brand href="/home">
             <img
               alt="Motorsports Retport"

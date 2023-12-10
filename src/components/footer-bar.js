@@ -1,4 +1,5 @@
 import Navbar from 'react-bootstrap/Navbar';
+import '../styles/component-styles.css'
 
 function FooterBar() {
     return (

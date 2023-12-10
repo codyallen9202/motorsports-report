@@ -8,7 +8,7 @@ import DLMPage from './pages/dlm-page';
 import DSCPage from './pages/dsc-page';
 import NASCARPage from './pages/nascar-page';
 import PLMPage from './pages/plm-page';
-import './pages/screen-styles.css';
+import './styles/screen-styles.css';
 
 function App() {
   return (
