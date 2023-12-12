@@ -105,10 +105,9 @@
 }
 
 .article-card-img {
-    width: fit-content;
     height: fit-content;
     margin: 12px;
-    max-width: 50rem;
+    max-width: calc(100% - 24px);
 }
 /* ---------------------------------------- */
 
