@@ -26,7 +26,8 @@ export default function ArticleList({ filter }) {
                     author->{
                         name
                     },
-                }`,
+                    publishedAt
+                } | order(publishedAt desc)`,
                 { filter }
             )
             .then((data) => setPosts(data))

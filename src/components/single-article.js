@@ -48,10 +48,10 @@ export default function SingleArticle() {
 
     if (!singlePost) return <div>Loading...</div>;
 
-    const title=singlePost.title ? singlePost.title : 'Error: Title Not Found';
+    const title=singlePost.title ? singlePost.title : 'Untitled';
     const image=singlePost.mainImage ? singlePost.mainImage.asset.url : null;
-    const author=singlePost.author ? singlePost.author.name : 'No Author Found';
-    const date=singlePost.publishedAt ? dateFormat(singlePost.publishedAt) : 'Null';
+    const author=singlePost.author ? singlePost.author.name : 'Author Not Found';
+    const date=singlePost.publishedAt ? dateFormat(singlePost.publishedAt) : 'Date Not Found';
     const tag=singlePost.categories ? singlePost.categories.title : 'Other';
     const body=singlePost.body ? singlePost.body : null;
 
