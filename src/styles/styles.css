@@ -8,16 +8,17 @@
 }
 
 .base-card {
+    display: flex;
     flex-direction: row;
-    max-width: 50rem;
+    max-width: 100%;
     height: fit-content;
-    margin: 10px;
+    margin: 1%;
 }
 
 .base-card-img {
-    margin: 12px;
+    margin: 1.5%;
     height: fit-content;
-    max-width: 30rem;
+    max-width: 100%;
 }
 
 .base-card-author {
@@ -135,7 +136,7 @@
     display: flex;
     justify-content: center;
     margin: auto;
-    max-width: 60rem;
+    max-width: 25%;
 }
 
 .wrapper {
@@ -145,6 +146,15 @@
 
 .sp-container {
     margin-top: 15px;
-    max-width: 25%;
+    max-width: 100%;
 }
 /* ---------------------------------------------------------------- */
+
+/* Mobile */
+
+@media (max-width: 768px) {
+    .base-card {
+        flex-direction: column;
+        max-width: 100%;
+    }
+}
