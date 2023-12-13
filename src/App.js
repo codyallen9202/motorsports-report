@@ -13,6 +13,10 @@ function App() {
       <BrowserRouter>
         <HeaderBar/>
         <div className='content-container'>
+          <div className='sp-container'>
+            <VerticalSponsor/>
+          </div>
+          <div className='inner-content-container'>
           <Routes>
             <Route path='/' element={<ArticleList filter={null}/>}/>
             <Route path='/home/' element={<ArticleList filter={null}/>}/>
@@ -22,9 +26,8 @@ function App() {
             <Route path='/NASCAR/' element={<ArticleList filter={'NASCAR'}/>}/>
             <Route path='/other/' element={<ArticleList filter={'Other'}/>}/>
           </Routes>
-          <div className='sp-container'>
-            <VerticalSponsor/>
           </div>
+          
         </div>
         <FooterBar/>
       </BrowserRouter>

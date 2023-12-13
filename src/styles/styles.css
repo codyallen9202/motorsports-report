@@ -18,7 +18,7 @@
 .base-card-img {
     margin: 1.5%;
     height: fit-content;
-    max-width: 100%;
+    width: 97%;
 }
 
 .base-card-author {
@@ -114,9 +114,8 @@
 
 /* vertical-ad.js*/
 .vertical-sp-card {
-    width: fit-content;
+    width: 100%;
     height: fit-content;
-    margin: 10px;
 }
 
 .vertical-sp-title {
@@ -127,16 +126,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 15px;
+    margin: 1%;
 }
 
 /* App.js */
 .content-container {
     min-height: calc(100vh - 90px);
     display: flex;
+    flex-direction: row-reverse;
     justify-content: center;
     margin: auto;
-    max-width: 25%;
+    max-width: 30%;
+}
+
+.inner-content-container {
+    max-width: 70%;
 }
 
 .wrapper {
@@ -146,7 +150,7 @@
 
 .sp-container {
     margin-top: 15px;
-    max-width: 100%;
+    max-width: 30%;
 }
 /* ---------------------------------------------------------------- */
 
@@ -156,5 +160,19 @@
     .base-card {
         flex-direction: column;
         max-width: 100%;
+    }
+
+    .content-container {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .inner-content-container {
+        max-width: 100%;
+    }
+
+    .sp-container {
+        max-width: 100%;
+        margin: 1.5%;
     }
 }
