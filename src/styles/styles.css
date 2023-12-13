@@ -1,3 +1,7 @@
+body {
+    font-size: 16px;
+}
+
 /* article-list.js */
 .article-list {
     display: flex;
@@ -59,6 +63,7 @@
     justify-content: center;
     position: sticky;
     top: 0;
+    max-width: 100%;
 }
 
 .nav-link {
@@ -71,20 +76,20 @@
     align-items: center;
     margin-left: 10px;
     margin-right: 10px;
-    max-width: 100vw;
+    max-width: 100%;
 }
 /* ------------------------------------------ */
 
 /* single-article.js */
 .single-article {
-    max-width: 50rem;
+    max-width: 100%;
     height: fit-content;
     margin-top: 25px;
     margin-bottom: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* border: 0; */
+
 }
 
 .article-body {
@@ -97,6 +102,7 @@
 .article-card-title {
     font-size: xx-large;
     text-align: center;
+    max-width: 100%;
 }
 
 .article-card-author {
@@ -109,6 +115,14 @@
     height: fit-content;
     margin: 12px;
     max-width: calc(100% - 24px);
+}
+
+.card-text {
+    max-width: 100%;
+}
+
+.card-body {
+    max-width: 100%;
 }
 /* ---------------------------------------- */
 
@@ -157,6 +171,10 @@
 /* Mobile */
 
 @media (max-width: 768px) {
+    body {
+        font-size: .9rem;
+    }
+
     .base-card {
         flex-direction: column;
         max-width: 100%;
