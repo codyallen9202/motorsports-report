@@ -150,7 +150,7 @@ body {
     flex-direction: row-reverse;
     justify-content: center;
     margin: auto;
-    max-width: 30%;
+    max-width: 1000px;
 }
 
 .inner-content-container {
@@ -163,7 +163,7 @@ body {
 }
 
 .sp-container {
-    margin-top: 15px;
+    margin-top: 2.5%;
     max-width: 30%;
 }
 /* ---------------------------------------------------------------- */
