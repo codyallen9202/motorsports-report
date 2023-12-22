@@ -9,7 +9,7 @@ export default function HeaderBar() {
             <Navbar.Brand href="/home">
               <img
                 alt="Motorsports Retport"
-                src={'/images/logo.png'}
+                src={'/images/white-logo.png'}
                 height={70}
               />
             </Navbar.Brand>
