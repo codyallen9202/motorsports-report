@@ -3,9 +3,6 @@ import { useParams } from "react-router-dom";
 import { client } from "../client";
 import Card from 'react-bootstrap/Card';
 import SanityBlockContent from '@sanity/block-content-to-react';
-import { PortableText } from '@portabletext/react';
-import urlBuilder from '@sanity/image-url';
-import { getImageDimensions } from '@sanity/asset-utils';
 
 const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
@@ -58,21 +55,6 @@ export default function SingleArticle() {
     const tag=singlePost.categories ? singlePost.categories.title : 'Other';
     const body=singlePost.body ? singlePost.body : null;
 
-    const SampleImageComponent = ({value}) => {
-        const {width, height} = getImageDimensions(value)
-        return (
-          <img
-            src={urlBuilder().image(value).width(800).fit('max').auto('format').url()}
-            alt={value.alt || ' '}
-            loading="lazy"
-            style={{
-              // Avoid jumping around with aspect-ratio CSS property
-              aspectRatio: width / height,
-            }}
-          />
-        )
-      }
-
     return (
         <Card className='single-article'>
             <Card.Img className='article-card-img' src={image}/>
@@ -80,13 +62,10 @@ export default function SingleArticle() {
                 <Card.Title className='article-card-title'>{title}</Card.Title>
                 <Card.Text className='article-card-author'>{author} | {date} | {tag}</Card.Text>
                 <Card.Text>
-                    <PortableText
-                        value={body}
-                        components={{
-                            types: {
-                                image: SampleImageComponent,
-                            }
-                        }}
+                    <SanityBlockContent 
+                        blocks={body}
+                        projectId='xkb4ar5f'
+                        dataset='production'
                         className='article-body'
                         />
                 </Card.Text>
