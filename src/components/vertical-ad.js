@@ -13,6 +13,11 @@ export default function VerticalSponsor() {
                         </a>
                     </div>
                     <div className='single-sp'>
+                        <a href='https://www.floracing.com/' target='_blank' rel='noreferrer'>
+                            <Card.Img src='/images/flo-logo.jpg'/>
+                        </a>
+                    </div>
+                    <div className='single-sp'>
                         <Card.Text>Want to advertise with us?</Card.Text>
                         <Card.Text><a href='mailto:motorsportsreportnet@gmail.com'>Contact Us</a></Card.Text>
                     </div>
