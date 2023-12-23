@@ -1,5 +1,6 @@
 import Card from 'react-bootstrap/Card';
 import '../styles/styles.css';
+// import AdComponent from './ad-component';
 
 export default function VerticalSponsor() {
     return(
