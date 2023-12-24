@@ -1,6 +1,6 @@
 import Card from 'react-bootstrap/Card';
 import '../styles/styles.css';
-// import AdComponent from './ad-component';
+import GoogleAd from './google-ad';
 
 export default function VerticalSponsor() {
     return(
@@ -17,6 +17,9 @@ export default function VerticalSponsor() {
                         <a href='https://www.floracing.com/' target='_blank' rel='noreferrer'>
                             <Card.Img src='/images/flo-logo.jpg'/>
                         </a>
+                    </div>
+                    <div>
+                        <GoogleAd/>
                     </div>
                     <div className='single-sp'>
                         <Card.Text>Want to advertise with us?</Card.Text>
