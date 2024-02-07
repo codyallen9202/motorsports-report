@@ -6,6 +6,7 @@ import ArticleList from './components/article-list';
 import VerticalSponsor from './components/vertical-ad';
 import './styles/styles.css';
 import SingleArticle from './components/single-article';
+import NotFound from './components/not-found';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             <Route path='/NASCAR/' element={<ArticleList filter={'NASCAR'}/>}/>
             <Route path='/photos/' element={<ArticleList filter={'Photos'}/>}/>
             <Route path='/other/' element={<ArticleList filter={'Other'}/>}/>
+            <Route path='*' element={<NotFound/>}/>
           </Routes>
           </div>
           
