@@ -24,6 +24,7 @@ function App() {
             <Route path='/DLM/' element={<ArticleList filter={'Dirt Late Models'}/>}/>
             <Route path='/DSC/' element={<ArticleList filter={'Dirt Sprint Cars'}/>}/>
             <Route path='/NASCAR/' element={<ArticleList filter={'NASCAR'}/>}/>
+            <Route path='/photos/' element={<ArticleList filter={'Photos'}/>}/>
             <Route path='/other/' element={<ArticleList filter={'Other'}/>}/>
           </Routes>
           </div>
