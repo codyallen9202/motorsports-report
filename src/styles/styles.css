@@ -93,7 +93,7 @@ body {
 }
 
 .article-body {
-    align-items: center;
+    align-items: start;
     display: flex;
     flex-direction: column;
     text-align: start;
