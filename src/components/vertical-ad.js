@@ -1,6 +1,5 @@
 import Card from 'react-bootstrap/Card';
 import '../styles/styles.css';
-import GoogleAd from './google-ad';
 
 export default function VerticalSponsor() {
     return (
