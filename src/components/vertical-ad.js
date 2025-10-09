@@ -3,24 +3,24 @@ import '../styles/styles.css';
 import GoogleAd from './google-ad';
 
 export default function VerticalSponsor() {
-    return(
+    return (
         <Card className='vertical-sp-card'>
             <Card.Body>
                 <Card.Title className='vertical-sp-title'>OUR SPONSORS</Card.Title>
                 <Card.Body>
                     <div className='single-sp'>
                         <a href='https://www.huckfinnsrestaurant.com/' target='_blank' rel='noreferrer'>
-                            <Card.Img src='/images/hf-logo.jpg'/>
+                            <Card.Img src='/images/hf-logo.jpg' />
                         </a>
                     </div>
                     <div className='single-sp'>
                         <a href='https://www.floracing.com/' target='_blank' rel='noreferrer'>
-                            <Card.Img src='/images/flo-logo.jpg'/>
+                            <Card.Img src='/images/flo-logo.jpg' />
                         </a>
                     </div>
-                    <div>
+                    {/* <div>
                         <GoogleAd/>
-                    </div>
+                    </div> */}
                     <div className='single-sp'>
                         <Card.Text>Want to advertise with us?</Card.Text>
                         <Card.Text><a href='mailto:motorsportsreportnet@gmail.com'>Contact Us</a></Card.Text>
